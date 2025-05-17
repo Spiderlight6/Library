@@ -8,27 +8,59 @@ header{
     text-align: center;
     margin-bottom: 20px;
 }
-main{
-    display: flex;
-    justify-content: space-evenly;
-}
 
+ #container{
+    padding-top: 2px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 20px;
+ }
 .card{
-    background-color: rgb(166, 161, 161);
-    width: 40%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
-    border-radius: 10px;
-}
-#container{
-    padding: 2px 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    font-family: sans-serif;
+    font-size: large;
+    box-shadow: 0 4px 8px 0 #979494;
+    transition: 0.3s;
+    padding: 1rem;
+    width: 250px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    white-space: pre-line;
 }
 
+dialog{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: #f7f4f4;
+    background-color: #101053;
+    margin: auto;
+    width: 50%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 4px;
+}
+
+input{
+    padding: 5px;
+    font-size: 1.3rem;
+}
+#read-or-not{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 0.9px;
+}
+#read-or-not:checked{
+    transform: scale(1);
+    background-color: aqua;
+}
+.read-checkbox{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    
+}
 button{
     color: #f7f4f4;
     background-color: #3030b3;
